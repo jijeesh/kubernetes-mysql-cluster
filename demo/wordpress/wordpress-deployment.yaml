@@ -8,9 +8,10 @@ metadata:
 spec:
   ports:
     - port: 80
+      nodePort: 31182
   selector:
     app: wordpress
-  type: LoadBalancer
+  type: NodePort
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
